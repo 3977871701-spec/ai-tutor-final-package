@@ -1,0 +1,33 @@
+xai:
+  api_key: "xai-nmofs3ZeLLd72DIJyvSJxcg2volnHybHd3mB0lhobO5Ns3EnRWNLSdCbGn0BeMWfEnqZw0wyz0pkfS9j"
+  model: "grok-2"
+
+wechat:
+  app_id: "YOUR_WECHAT_APP_ID"
+  app_secret: "YOUR_WECHAT_APP_SECRET"
+  token: "YOUR_WECHAT_TOKEN"
+  encoding_aes_key: "YOUR_WECHAT_AES_KEY"
+
+chroma:
+  persist_directory: "./data/chroma_db"
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  ngrok_url: ""  # Set after ngrok starts
+
+teacher:
+  # 老师联系方式，复杂问题转人工时使用
+  contacts:
+    - name: "张老师"
+      phone: "010-12345678"
+      department: "学生工作办公室"
+      specialty: "奖助学金,助学贷款"
+    - name: "李老师"
+      phone: "010-23456789"
+      department: "宿舍管理办公室"
+      specialty: "宿舍调整,退宿,住宿申请"
+    - name: "王老师"
+      phone: "010-34567890"
+      department: "教务办公室"
+      specialty: "消三比,成绩单,学籍证明"
